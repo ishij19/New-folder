@@ -41,7 +41,12 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.5rem; /* space-y-2 */
-  margin-left: 26rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    margin-left: 26rem;
+  }
 `;
 
 const ListItem = styled.li`

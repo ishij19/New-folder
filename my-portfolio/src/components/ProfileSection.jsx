@@ -29,8 +29,13 @@ const ImageWrapper = styled.div`
 
 const ProfileImage = styled.img`
   border-radius: 50%;
-  width: 15rem;   /* 48 * 4px = 192px */
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
+
+  @media (min-width: 768px) {
+    width: 15rem;
+    height: 15rem;
+  }
   object-fit: cover;
 `;
 
@@ -39,6 +44,11 @@ const Info = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+  }
 `;
 
 const Label = styled.p`
@@ -46,7 +56,11 @@ const Label = styled.p`
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
-  margin-left: -3.5rem;
+  margin-left: 0;
+  
+  @media (min-width: 768px) {
+    margin-left: -3.5rem;
+  }
 `;
 
 const Name = styled.h1`
@@ -55,7 +69,11 @@ const Name = styled.h1`
   font-weight: 700;
   line-height: 1;
   margin: 0;
-  margin-left: -3.5rem;
+  margin-left: 0;
+
+  @media (min-width: 768px) {
+    margin-left: -3.5rem;
+  }
 `;
 
 const Role = styled.h2`
@@ -64,7 +82,16 @@ const Role = styled.h2`
   font-weight: 600;
   line-height: 1.7;
   margin: 0;
-  margin-left: -3.5rem;
+  margin-left: 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: -3.5rem;
+  }
 `;
 
 const Description = styled.p`
@@ -73,7 +100,17 @@ const Description = styled.p`
   line-height: 1.3;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: -3.5rem;
+  margin-left: 0;
+  overflow-wrap: break-word;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: -3.5rem;
+  }
 `;
 
 const ContactButton = styled.button`
@@ -84,7 +121,11 @@ const ContactButton = styled.button`
   padding: 0.5rem 1rem;
   border-radius: 0.375rem;
   margin-top: 0.5rem;
-  margin-left: -3.5rem;
+  margin-left: 0;
+
+  @media (min-width: 768px) {
+    margin-left: -3.5rem;
+  }
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;

@@ -23,7 +23,7 @@ const Heading = styled.h2`
     font-size: 1.5rem;
     margin: 0 auto;
     text-align: center;
-  };
+  }
 `;
 
 const Form = styled.form`

@@ -14,12 +14,15 @@ const rotate = keyframes`
 const ToolsSectionWrapper = styled.section`
   border: 1px solid #3a3a3a;
   border-radius: 0.375rem;
-  width: 1245px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 0;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  justify-items: center;
+  padding: 1.5rem;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    gap: 5rem;
+  }
 `;
 
 const ToolItem = styled.div`

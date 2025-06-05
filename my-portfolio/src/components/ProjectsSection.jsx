@@ -43,13 +43,8 @@ const Heading = styled.h2`
 
 const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 1rem;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
 `;
 
 const CardLink = styled.a`
@@ -64,9 +59,8 @@ const ProjectCard = styled.div`
   color: #000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 18rem;
-  width: 80%;
-  margin-left:4rem;
+  width: 100%;
+  height: auto;
 
   &:hover {
     transform: translateY(-5px);
@@ -126,6 +120,7 @@ const ProjectTitle = styled.h3`
   @media (max-width: 768px) {
     font-size: 0.85rem;
     text-align: center;
+  }
 `;
 
 const MoreLink = styled.div`
