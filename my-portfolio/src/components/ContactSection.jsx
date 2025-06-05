@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { useRef } from "react";
+import emailjs from "emailjs-com"; // ✅ Import EmailJS
 
 const Section = styled.section`
-  
   border: 1px solid #3a3a3a;
   border-radius: 0.375rem;
   padding: 1rem;
@@ -9,7 +10,7 @@ const Section = styled.section`
 `;
 
 const Heading = styled.h2`
-    color: #fbbf24;
+  color: #fbbf24;
   font-size: 2rem;
   font-weight: 500;
   border-radius: 0.375rem;
@@ -48,7 +49,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  background-color: #3b82f6; /* blue-500 */
+  background-color: #3b82f6;
   color: white;
   font-weight: 600;
   padding: 0.5rem 1rem;
@@ -57,18 +58,39 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #2563eb; /* blue-600 */
+    background-color: #2563eb;
   }
 `;
 
 export default function ContactSection() {
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_q28304y',     // 🔁 Replace this
+      'template_07o8fov',    // 🔁 Replace this
+      formRef.current,
+      '6Bk1btNHGq6IG2IT9'      // 🔁 Replace this
+    )
+    .then(() => {
+      alert('Message sent successfully!');
+      formRef.current.reset(); // Clear form
+    })
+    .catch((error) => {
+      alert('Message failed to send.');
+      console.log(error);
+    });
+  };
+
   return (
     <Section id="contact">
       <Heading>Let's Connect</Heading>
-      <Form>
-        <Input type="text" placeholder="Your Name" required />
-        <Input type="email" placeholder="Your Email" required />
-        <TextArea placeholder="Your Message" rows={4} required />
+      <Form ref={formRef} onSubmit={sendEmail}>
+        <Input type="text" name="name" placeholder="Your Name" required />
+        <Input type="email" name="email" placeholder="Your Email" required />
+        <TextArea name="message" placeholder="Your Message" rows={4} required />
         <Button type="submit">Send</Button>
       </Form>
     </Section>
