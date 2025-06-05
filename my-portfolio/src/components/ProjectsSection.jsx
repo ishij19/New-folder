@@ -156,13 +156,13 @@ export default function ProjectsSection() {
       </HeaderRow>
       <ProjectsGrid>
         {/* Project Card 1 */}
-        <CardLink href="https://your-project-link-1.com" target="_blank" rel="noopener noreferrer">
+        <CardLink href="https://drive.google.com/drive/folders/1H3V8b7sY_zlXnqOfD1tkj4C5NoWwTLoq?usp=sharing" target="_blank" rel="noopener noreferrer">
           <ProjectCard>
             <ImageContainer>
               <ProjectImage src="/images/donuts.png" alt="Project 1" />
               <HoverOverlay>Donut Battle Animation</HoverOverlay>
             </ImageContainer>
-            <ProjectTitle>Donut Fight</ProjectTitle>
+            <ProjectTitle>Yes the Donut Project</ProjectTitle>
             <MoreLink>More Info →</MoreLink>
           </ProjectCard>
         </CardLink>
