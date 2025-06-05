@@ -159,7 +159,7 @@ export default function ProjectsSection() {
         <CardLink href="https://drive.google.com/drive/folders/1H3V8b7sY_zlXnqOfD1tkj4C5NoWwTLoq?usp=sharing" target="_blank" rel="noopener noreferrer">
           <ProjectCard>
             <ImageContainer>
-              <ProjectImage src="/images/donuts.png" alt="Project 1" />
+              <ProjectImage src="/images/0264.png" alt="Project 1" />
               <HoverOverlay>Donut Battle Animation</HoverOverlay>
             </ImageContainer>
             <ProjectTitle>Yes the Donut Project</ProjectTitle>

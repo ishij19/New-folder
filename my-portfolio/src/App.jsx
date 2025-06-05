@@ -6,6 +6,8 @@ import ProficiencySection from "./components/ProficiencySection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
 import AboutSection from "./components/AboutSection";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   return (

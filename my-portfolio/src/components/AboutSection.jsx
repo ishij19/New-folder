@@ -71,13 +71,13 @@ const TextSpan = styled.span``;
 export default function AboutSection() {
   return (
     <Section id="about">
-      <Heading>About</Heading>
+      <Heading>Contact</Heading>
       
       <List>
         <ListItem>
           <IconWrapper><FaEnvelope /></IconWrapper>
           <TextSpan>Email:</TextSpan>
-          <Link href="mailto:ishijain19@gmail.com">ishi.jain@example.com</Link>
+          <Link href="mailto:ishijain19@gmail.com">ishijain19@gmail.com</Link>
         </ListItem>
         <ListItem>
           <IconWrapper><FaPhoneAlt /></IconWrapper>

@@ -62,7 +62,7 @@ const ProficiencySection = () => {
     skillIcon: {
       fontSize: "48px",
       backgroundColor: "rgba(255,255,255,0.15)",
-      padding: "20px",
+      padding: "9px",
       borderRadius: "50%",
       boxShadow: "0 6px 10px rgba(0,0,0,0.3)",
       marginBottom: "14px",

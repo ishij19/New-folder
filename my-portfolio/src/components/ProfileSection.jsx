@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+
 const Section = styled.section`
   display: flex;
   flex-direction: column;
@@ -114,7 +115,14 @@ const ProfileSection = () => {
           <br />
           Skilled in web, full-stack, and graphic design, I believe that web applications, my true passion, come from crafting visuals that speak without words. From designing posters and digital art to building detailed 3D models and editing videos, I find joy in the artistic side of work. I believe design is more than how things look — it's how they feel and function. Combining logic with creativity, I thrive at the intersection of design and development, learning concepts for clients, completing experiences – whether it's an e-commerce or 3D space.
         </Description>
-        <ContactButton>CONTACT ME</ContactButton>
+        <a
+  href="https://www.linkedin.com/in/ishijain-"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <ContactButton>Contact Me</ContactButton>
+</a>
+
       </Info>
     </Section>
   );
