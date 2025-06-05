@@ -99,7 +99,7 @@ const ProfileSection = () => {
     <Section id="profile-section">
       <ImageWrapper>
         <ProfileImage
-          src="\public\images\your-photo.jpg"
+          src="\images\your-photo.jpg"
           alt="Image"
           width={250}
           height={250}
